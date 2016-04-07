@@ -3,15 +3,14 @@
 
 int main (int argc, char *argv[]){
 	int mas[100];
-	int a,b,i,n;
+	int h, i, c;
 
-	printf ("Vvedite chislo a:" );
-	scanf ("%d", &a);
-	printf ("Vvedite chislo b:" );
-	scanf ("%d", &b);
-	for (i = 0, n = a; n < b; i++, n++){
-		mas [i] = n;
-		printf ("mas [%d] = %d\n",i,n);
+	printf ("Vvedite chislo h:" );
+	scanf ("%d", &h);
+	
+	for (i = 0, c = 1; c < h; i++, c = c+2){
+		mas [i] = c;
+		printf ("mas [%d] = %d\n",i,c);
 		
 	}
 
