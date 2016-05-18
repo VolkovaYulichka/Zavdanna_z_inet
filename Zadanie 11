@@ -1,0 +1,18 @@
+#include <stdio.h> 
+
+int main () 
+{ 
+	int mas [100]; 
+	int n, i=0; 
+	printf("Rozmir masiva: "); 
+	scanf("%d", &n); 
+
+	while (i < n) { 
+		printf("\nmas[%d]= ", i); 
+		scanf ("%d", &mas[i]); 
+		i++; 
+	} 
+	
+
+	return 0; 
+}
