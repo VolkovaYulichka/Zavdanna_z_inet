@@ -2,19 +2,17 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main(int argc, char *argv[]) {
-	double mas[100];
-	int i;
-	double h;
-	printf ("Vvedite chislo h:");
-	scanf ("%lf", &h);
+int main()
+{
+	int mass[300];
+	int h, i;
+	printf("Vvedite h: ");
+	scanf("%d", &h);
 	
 	srand(time(0));
-	for (i = 0; i < 10; i++){
-		mas[i] = ((float)rand()/RAND_MAX)*h;
-		printf (" mas [%d] = %lf\n", i, mas [i]);
-}
 	
-	
-	return 0;
+	for(i = 0; i < h; i++) {
+		mass[i] = rand() % 200;
+		printf("\nmas[%d] = %d", i, mass[i]);
+	}
 }
